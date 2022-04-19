@@ -32,7 +32,7 @@ $pollData = $_POST;
                         <?php print $row['poll_id']. "\n"; ?>
                         <br>
 
-                        <input type="radio" id="poll_<?php print $row['poll_id']; ?>_a" name="poll_<?php print $row['poll_id']; ?>" value="1"  <?php if (!empty($pollData['poll_'.$row['poll_id']]) && $pollData['poll_'.$row['poll_id']] == 1) echo "checked";?>>
+                        <input type="radio" id="poll_<?php print $row['poll_id']; ?>_a" name="poll_<?php print $row['poll_id']; ?>" value="1"   <?php if (!empty($pollData['poll_'.$row['poll_id']]) && $pollData['poll_'.$row['poll_id']] == 1) echo "checked";?>>
                         <label for="poll_<?php print $row['poll_id']; ?>_a"><?php print $row['option_1']. "\n"; ?></label>
 
 

@@ -27,8 +27,8 @@ if (isset($_POST) && count($_POST)!=100 ) {
         $stmt->execute([$userId,$pollId, $answerValue,$horizontalId,$verticalId]);
     }
 
-    session_destroy();
     echo "<br>ФОРМА ОТПРАВЛЕНО";
+    header( "refresh:2;url=results.php" );
 }
 
 function getUserId(){
